@@ -1,0 +1,9 @@
+<div class="carousel-container" *ngIf="getallslider.length">
+    <div class="carousel-slide" [style.transform]="'translateX(' + (-currentIndex * 100) + '%)'">
+        <div *ngFor="let slider of getallslider" class="carousel-item">
+            <a [href]="slider.link" target="_blank">
+                <img [src]="slider.imageUrl" alt="Slider Image" class="w-full h-auto" />
+            </a>
+        </div>
+    </div>
+</div>
